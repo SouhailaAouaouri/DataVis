@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+	<title>Admin Dashbord </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="styleAcc.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+<body>
+	<input type="checkbox" id="menu" name="">
+	<div class="sidebar">
+		<div class="sidebar-brand">
+			<h2><span class="fa fa-user-o"></span>Visualisation des Données</h2>
+		</div>
+<!-- menu left -->
+		<div class="sidebar-menu">
+			<ul>
+				<li>
+					<a href="" class="active"><span class="fa fa-home"></span><span>Accueil</span></a>
+				</li>
+				<li>
+					<a href="indexClo.html"><span class="fa fa-clock-o"></span><span>Times</span></a>
+				</li>
+				<li>
+					<a href=""><span class="fa fa-user"></span><span>Contacts</span></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="content">
+		
+		<header>
+			<p><label for="menu"><span class="fa fa-bars"></span></label><span class="accueil">Accueil</span></p>
+
+			<div class="search-wrapper">
+				<span class="fa fa-search"></span>
+				<label>
+					<input type="search" name="" placeholder="recherche" />
+				</label>
+			</div>
+
+			<div class="user-wrapper" id="dropdown">
+				<div>
+					<h4>Aouaouri Souhaila</h4>
+					<small>Admin</small>
+				</div>
+				
+				<img src="../images/pp.jpg" width="30" height="30" class="logo-admin" alt="">
+				<div class="dropdown-content">
+				<p>Mon profil</p>
+				<p>Deconnexion</p>
+				</div>
+				
+			</div>
+		</header>
+
+		<main>
+			<!-- partie 1 les btn  -->
+			<div class="cards">
+				<div class="card-single">
+					<div>
+						<h2>Emails </h2>
+						<small>Envoyé</small>
+					</div>
+					<div>
+						<span class="fa fa-at"></span>
+					</div>
+				</div>
+
+				<div class="card-single">
+					<div>
+						<h2>Users</h2>
+						<small>Users</small>
+					</div>
+					<div>
+						<span class="fa fa-users"></span>
+					</div>
+				</div>
+				<div class="card-single">
+					<div>
+						<h2>Paragraphe</h2>
+						<small>Ecrit</small>
+					</div>
+					<div>
+						<span class="fa fa-outdent"></span>
+					</div>
+				</div>
+				<div class="card-single">
+					<div>
+						<h2>Lettres</h2>
+						<small>Utilisé</small>
+					</div>
+					<div>
+						<span class="fa fa-font"></span>
+					</div>
+				</div>
+			</div>
+			<!-- body -->
+			<div class="composant">
+				<!-- partie 2 char pie  -->
+				<div class="ventes">
+					<div class="case">
+						<div class="header-case">
+							<h2>Emails Par années </h2>
+						</div>
+								<div class="body-case">
+						<div class="tableau" style="text-align: -webkit-center">
+							<table width="100%">
+
+								<tbody>
+								<div id="chart-ring-year" style="width:300px; height:330px">
+									<div class="reset" style="visibility: hidden;">selectionnée : <span class="filter"></span>
+										<a href="javascript:yearRingChart.filterAll();dc.redrawAll();"> Annuler</a>
+									</div>
+								</div>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					</div>
+				</div>
+				<!-- partie 3 apropos   -->
+				<div class="stock">
+					<div class="case" style="    height: 100%;">
+						<div class="header-case">
+							<h2>À-propos</h2>
+						</div>
+						<div class="body-case">
+							<p>
+							<ol >
+								<li>1. Sélectionner une année pour consulter le nombre des mails envoyés dans cette année</li>
+							<li>
+								<br>2. Vous trouverez ci dessous un diagramme explique le total des emails de chaque utilisateurs et le pourcentage de totale
+							</li>
+							<li>
+
+								<br> 3. Vous trouverez les données initial des utilisateurs
+							</li>
+							<li> <br> 4. Si vous pouvez télécharger les données clique sur le bouton "Télecharger" </li>
+						</ol>
+							</p>
+
+						</div>
+						</div>
+					</div>
+				</div>
+			<!--  diag bar  -->
+				<div class="composant">
+					<div class="ventes">
+						<div class="case" style="    width: 210%;">
+							<div class="header-case">
+								<h2>Emails Par Users </h2>
+							</div>
+							<div class="body-case">
+								<div class="tableau" style="text-align: -webkit-center">
+									<table width="100%">
+
+										<tbody>
+										<div id="chart-hist-spend" style="width:300px; height:330px;font-size: 8px;">
+											<div class="reset" style="visibility: hidden;">range: <span class="filter"></span>
+												<a href="javascript:spendHistChart.filterAll();dc.redrawAll();">reset</a>
+											</div>
+										</div>
+										<div id="chart-row-spenders">
+											<div class="reset" style="visibility: hidden;">selected: <span class="filter"></span>
+												<a href="javascript:spenderRowChart.filterAll();dc.redrawAll();">Annuler</a>
+											</div>
+										</div>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			<!-- tableau des users  -->
+			<div class="composant">
+				<div class="ventes">
+					<div class="case" style="    width: 210%;">
+						<div class="header-case">
+							<h2>Users Informations</h2>
+						</div>
+						<div class="body-case">
+							<div class="tableau" style="text-align: -webkit-center">
+								<table width="100%">
+
+									<tbody>
+									<div style="clear: both; margin: 30px; float: left">
+										<div id="table"></div>
+										<div id="download-type" style="clear: both; float: left">
+											<br>
+											<div>
+												<label><input type=radio name="operation" value="raw" checked="true">&nbsp;Tout les Données </label>
+											<button type="button" class="btn btn-outline-secondary" id="download"> Télecharger</button></div>
+										</div>
+									</div>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<!--  calendar -->
+			<div class="calendar">
+			<div class="mois-annee">
+			  <ul>
+			    <li class="prev">&#10094;</li>
+			    <li class="next">&#10095;</li>
+			    <li>Mai <br><span>2022</span></li>
+			  </ul>
+			</div>
+
+			<ul class="mois">
+			  <li>Mo</li>
+			  <li>Tu</li>
+			  <li>We</li>
+			  <li>Th</li>
+			  <li>Fr</li>
+			  <li>Sa</li>
+			  <li>Su</li>
+			</ul>
+
+			<ul class="jours">
+			  <li>1</li>
+			  <li>2</li>
+			  <li>3</li>
+			  <li>4</li>
+			  <li>5</li>
+			  <li>6</li>
+			  <li>7</li>
+			  <li>8</li>
+			  <li>9</li>
+			  <li>10</li>
+			  <li><span class="active">11</span></li>
+			  <li>12</li>
+			  <li>13</li>
+			  <li>14</li>
+			  <li>15</li>
+			  <li>16</li>
+			  <li>17</li>
+			  <li>18</li>
+			  <li>19</li>
+			  <li>20</li>
+			  <li>21</li>
+			  <li>22</li>
+			  <li>23</li>
+			  <li>24</li>
+			  <li>25</li>
+			  <li>26</li>
+			  <li>27</li>
+			  <li>28</li>
+			  <li>29</li>
+			  <li>30<li>
+			</ul>
+			</div>
+
+		</main>
+
+	</div>
+<!-- scripts  -->
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.4.10/d3.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/crossfilter/1.3.7/crossfilter.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/dc/2.1.0-dev/dc.js'></script>
+	<script src='https://dc-js.github.io/dc.js/js/FileSaver.js'></script>
+	<script  src="./scriptDiag.js"></script>
+
+</body>
+</html>

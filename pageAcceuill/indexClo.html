@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - clock</title>
+  <link rel="stylesheet" href="./styleClock.css">
+
+		<title> Digital Clock with HTML5 Audio Alarms</title>
+
+		<!--[if lt IE 9]>
+			<script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div id="clock" class="light">
+			<div class="display">
+				<div class="weekdays"></div>
+				<div class="ampm"></div>
+				<div class="alarm"></div>
+				<div class="digits"></div>
+			</div>
+		</div>
+
+		<div class="button-holder">
+			<a id="switch-theme" class="button">Switch Theme</a>
+			<a class="alarm-button"></a>
+		</div>
+
+		</div>
+
+		<audio id="alarm-ring" preload>
+			<source src="http://rutera.cloudvps.bg/demos/digital/assets/audio/ticktac.mp3" type="audio/mpeg" />
+			<source src="http://rutera.cloudvps.bg/demos/digital/assets/audio/ticktac.ogg" type="audio/ogg" />
+		</audio>
+
+	
+        
+		<!-- JavaScript Includes -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.0.0/moment.min.js"></script>
+
+<!-- partial -->
+  <script  src="./scriptClock.js"></script>
+
+</body>
+</html>
